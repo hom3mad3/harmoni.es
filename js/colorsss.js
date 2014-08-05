@@ -59,11 +59,26 @@ var colors = [
 new Color('Cauli flower', 'F3EBE0'),
 new Color('Chick Pea', 'D5B74E'),
 new Color('Tomato', 'CE2107'),
+new Color("spinach", "184620"),
+new Color("tomato", "CE2107"),
+new Color("radish", "C2243C"),
+new Color("peas", "A3B001"),
+new Color("blueberry", "253D88"),
+new Color("carrot", "e67e22"), 
+new Color("pumpkin", "d35400"),
+new Color("kale", "869D84"),
+new Color("broccoli", "4B802D"),
+new Color("lemon", "F5F50C"),
+new Color("raspberry", "E2324F"),
+new Color("coffee", "7E4A33"),
+new Color("blackberry", "473D3E"),
+new Color("grapefruit", "EC4C28"),
+new Color("bean", "910C2B")
 ];
 
 
 colors.sort(function(color1, color2) {
-  return rgbToHSL(color1.code).h - rgbToHSL(color2.code).h; 
+  return rgbToHSL(color2.code).l - rgbToHSL(color1.code).l; 
 });
 
 $.each(colors, function(i, color) {
