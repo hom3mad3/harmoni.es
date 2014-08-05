@@ -1,0 +1,194 @@
+
+
+.grid {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.grid:after;
+.item:before {
+    content: '';
+    display: table;
+}
+
+.grid:after; {
+    clear: both;
+}
+
+
+.grid li{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.item {
+	width:100%;
+	height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    box-shadow:
+        inset 0 0 0 2px rgba(255,255,255,0.6),
+        0 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.info {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+}
+
+.info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 0 30px;
+    padding: 45px 0 0 0;
+    height: 100px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow:
+        0 0 1px #fff,
+        0 1px 2px rgba(0,0,0,0.3);
+}
+
+.info p {
+    color: #fff;
+    padding: 5px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 10px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    opacity: 0;
+    transition: all 1s ease-in-out 0.4s;
+}
+
+.info p a {
+    display: block;
+    color: rgba(255,255,255,0.7);
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.info p a:hover {
+    color: rgba(255,242,34, 0.8);
+}
+
+.item:hover {
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,0.1),
+        0 1px 2px rgba(0,0,0,0.1);
+}
+
+.item:hover .info {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.item:hover .info p {
+    opacity: 1;
+}
+
+
+.spinach {
+    background-color: #184620;
+}
+ 
+.chickpea {
+    background-color: #D5B74E;
+}
+ 
+.tomato {
+    background-color: #CE2107;
+}
+
+.radish {
+    background-color: #C2243C;
+}
+ 
+.peas {
+    background-color: #A3B001;
+}
+ 
+.blueberry {
+    background-color: #253D88;
+}
+
+.carrot {
+    background-color: #e67e22;
+}
+
+.pomegranate {
+	background-color:#c0392b;
+}
+
+.orange {
+	background-color:#f39c12;
+}
+
+.pumpkin {
+	background-color:#d35400;
+}
+
+#grid .cauliflower {
+	background-color:#F3EBE0;
+}
+
+.kale {
+    background-color:#869D84;
+}
+
+.broccoli {
+	background-color:#4B802D;
+}
+
+.lemon {
+	background-color:#F5F50C;
+}
+
+.raspberry {
+	background-color:#E2324F;
+}
+
+.coffee {
+	background-color:#7E4A33;
+}
+
+.blackbean {
+	background-color:#473D3E;
+}
+
+.grapefruit {
+	background-color:#EC4C28;
+}
+
+.beet {
+	background-color:#910C2B;
+}
+
+.spinach {
+	background-color:#00684F;
+}
+
+
+
