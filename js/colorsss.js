@@ -59,31 +59,31 @@ var colors = [
 new Color('Cauli flower', 'F3EBE0'),
 new Color('Chick Pea', 'D5B74E'),
 new Color('Tomato', 'CE2107'),
-new Color("spinach", "184620"),
-new Color("tomato", "CE2107"),
-new Color("radish", "C2243C"),
-new Color("peas", "A3B001"),
-new Color("blueberry", "253D88"),
-new Color("carrot", "e67e22"), 
-new Color("pumpkin", "d35400"),
-new Color("kale", "869D84"),
-new Color("broccoli", "4B802D"),
-new Color("lemon", "F5F50C"),
-new Color("raspberry", "E2324F"),
-new Color("coffee", "7E4A33"),
-new Color("blackberry", "473D3E"),
-new Color("grapefruit", "EC4C28"),
-new Color("bean", "910C2B")
+new Color("Spinach", "184620"),
+new Color("Tomato", "CE2107"),
+new Color("Radish", "C2243C"),
+new Color("Peas", "A3B001"),
+new Color("Blueberry", "253D88"),
+new Color("Carrot", "e67e22"), 
+new Color("Pumpkin", "d35400"),
+new Color("Kale", "869D84"),
+new Color("Broccoli", "4B802D"),
+new Color("Lemon", "F5F50C"),
+new Color("Raspberry", "E2324F"),
+new Color("Coffee", "7E4A33"),
+new Color("Blackberry", "473D3E"),
+new Color("Grapefruit", "EC4C28"),
+new Color("Bean", "910C2B")
 ];
 
 
 colors.sort(function(color1, color2) {
-  return rgbToHSL(color2.code).l - rgbToHSL(color1.code).l; 
+  return rgbToHSL(color1.code).h + rgbToHSL(color2.code).h; 
 });
 
 $.each(colors, function(i, color) {
 	var hsl = rgbToHSL(color.code);
-	$('ul.grid').append('<li><div class="item" style="background-color:#'+ color.code + ' "><div class="info"><a href="#"><h3>' + color.name + ' (' + hsl.h + ')' + '</h3></a><p>#' + color.code + '</p></div></div></li>');
+	$('ul.grid').append('<li><div class="item" style="background-color:#'+ color.code + ' "><div class="info"><a href="#"><h3>' + color.name + /*' (' + hsl.h + ')' + */'</h3></a><p>#' + color.code + '</p></div></div></li>');
 });
 
 });
