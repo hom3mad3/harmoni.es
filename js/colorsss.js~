@@ -78,7 +78,7 @@ new Color("Bean", "910C2B")
 
 
 colors.sort(function(color1, color2) {
-  return rgbToHSL(color1.code).h + rgbToHSL(color2.code).h; 
+  return rgbToHSL(color1.code).l + rgbToHSL(color2.code).l; 
 });
 
 $.each(colors, function(i, color) {
